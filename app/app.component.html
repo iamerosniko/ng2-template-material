@@ -38,6 +38,27 @@
                     </md-input-container>
                 </td>
             </tr>
+            <tr>
+                <td>radiobutton</td>
+                <td>
+                    <md-radio-group>
+                        <md-radio-button value="1">Option 1</md-radio-button>
+                        <md-radio-button value="2">Option 2</md-radio-button>
+                    </md-radio-group>
+                </td>
+            </tr>
+            <tr>
+                <td>select</td>
+                <td>
+                    <md-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
+                        <md-option *ngFor="let food of foods" [value]="food.value">
+                        {{food.viewValue}}
+                        </md-option>
+                    </md-select>
+
+                    <p> Selected value: {{selectedValue}} </p>
+                </td>
+            </tr>
         </tbody>
         
     </table>

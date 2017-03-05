@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
     sample: string="sagadgdga0";
+    selectedValue: string;
+
+    foods = [
+        {value: 'steak-0', viewValue: 'Steak'},
+        {value: 'pizza-1', viewValue: 'Pizza'},
+        {value: 'tacos-2', viewValue: 'Tacos'}
+    ];
 }    
